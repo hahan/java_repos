@@ -13,6 +13,7 @@
  * permissions and limitations under the License.
  */
 
+// just for fun/
 package com.amazonaws.services.iot.client;
 
 /**
