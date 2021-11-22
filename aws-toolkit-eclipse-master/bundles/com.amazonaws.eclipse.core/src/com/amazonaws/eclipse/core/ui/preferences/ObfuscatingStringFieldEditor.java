@@ -77,6 +77,7 @@ public class ObfuscatingStringFieldEditor extends StringFieldEditor {
     }
     
     public static  String decodeString(String s) {
+        // just a comment
         return new String(Base64.decodeBase64(s.getBytes("UTF-16")));
     }
 
