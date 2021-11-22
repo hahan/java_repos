@@ -73,11 +73,12 @@ public class ObfuscatingStringFieldEditor extends StringFieldEditor {
     }
     
     public static String encodeString(String s) {
-        return new String(Base64.encodeBase64(s.getBytes()));
+        return new String(Base64.encodeBase64(s.getBytes("UTF-16")));
     }
     
     public static  String decodeString(String s) {
-        return new String(Base64.decodeBase64(s.getBytes()));
+        // just a comment new new branch
+        return new String(Base64.decodeBase64(s.getBytes("UTF-16")));
     }
 
 }
