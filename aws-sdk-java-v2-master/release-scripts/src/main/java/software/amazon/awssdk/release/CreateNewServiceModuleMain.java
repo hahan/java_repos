@@ -115,7 +115,7 @@ public class CreateNewServiceModuleMain extends Cli {
         }
 
         private void replacePlaceholdersInFile(Path file) throws IOException {
-            String fileContents = new String(Files.readAllBytes(file), UTF_8);
+            //String fileContents = new String(Files.readAllBytes(file), UTF_8);
             String newFileContents = replacePlaceholders(fileContents);
             Files.write(file, newFileContents.getBytes(UTF_8));
         }
