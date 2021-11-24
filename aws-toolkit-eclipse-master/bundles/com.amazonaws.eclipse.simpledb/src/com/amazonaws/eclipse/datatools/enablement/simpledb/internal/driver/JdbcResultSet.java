@@ -257,18 +257,7 @@ public class JdbcResultSet implements ResultSet, ResultSetMetaData {
         return getBytes(findColumn(col));
     }
 
-    @Override
-    public Date getDate(final int col) throws SQLException {
-        try {
-            String str = getString(col);
-            if (str == null) {
-                return null;
-            }
-            return new Date(new SimpleDateFormat().parse(str).getTime());
-        } catch (Exception e) {
-            throw new SQLException(e.getMessage());
-        }
-    }
+    
 
     @Override
     public Date getDate(final int col, final Calendar cal) throws SQLException {
