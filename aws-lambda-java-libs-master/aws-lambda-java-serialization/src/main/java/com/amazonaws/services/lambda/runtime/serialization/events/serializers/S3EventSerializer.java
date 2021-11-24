@@ -114,11 +114,13 @@ public class S3EventSerializer<T> implements OrgJsonSerializer<T> {
         }
 
         // Writer in try block so that writer gets flushed and closed
-        try (Writer writer = new OutputStreamWriter(output)) {
+        /*try (Writer writer = new OutputStreamWriter(output)) {
             writer.write(jsonObject.toString());
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         }
+*/
+        
     }
 
     /**
