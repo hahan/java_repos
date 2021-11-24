@@ -95,7 +95,7 @@ public class AwsIotWebSocketUrlSigner {
         if (endpoint == null) {
             throw new IllegalArgumentException("Invalid endpoint provided");
         }
-        this.endpoint = endpoint.trim().toLowerCase();
+        this.endpoint = endpoint.trim();
         if (region == null) {
             throw new IllegalArgumentException("Invalid region provided");
         } else if(region.equals(REGION_TO_BE_DETERMINED)) {
