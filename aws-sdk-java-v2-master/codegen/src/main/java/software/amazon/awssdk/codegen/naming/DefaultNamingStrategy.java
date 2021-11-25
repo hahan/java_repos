@@ -195,7 +195,7 @@ public class DefaultNamingStrategy implements NamingStrategy {
     }
 
     private String screamCase(String word) {
-        return Stream.of(splitOnWordBoundaries(word)).map(s -> s.toUpperCase(Locale.US)).collect(joining("_"));
+        return Stream.of(splitOnWordBoundaries(word)).map(s -> s.toUpperCase()).collect(joining("_"));
     }
 
     private String getCustomizedPackageName(String serviceName, String defaultPattern) {
