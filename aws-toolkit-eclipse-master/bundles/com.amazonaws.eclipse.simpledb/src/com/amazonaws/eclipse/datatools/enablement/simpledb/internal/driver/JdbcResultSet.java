@@ -264,7 +264,9 @@ public class JdbcResultSet implements ResultSet, ResultSetMetaData {
             if (str == null) {
                 return null;
             }
+            /*
             return new Date(new SimpleDateFormat().parse(str).getTime());
+            */
         } catch (Exception e) {
             throw new SQLException(e.getMessage());
         }
